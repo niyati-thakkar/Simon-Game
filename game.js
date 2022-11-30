@@ -52,6 +52,11 @@ function animatePress(currentColor){
     $("#"+currentColor).removeClass("pressed");
   }, 100);
 }
+function startOver(){
+    level = -1;
+    gamePattern = [];
+    $("h1").text("Press A Key to Start");
+  }
 
 function checkAnswer(currentLevel){
   if(gamePattern[currentLevel] === userClickedPattern[currentLevel]){
@@ -70,8 +75,4 @@ function checkAnswer(currentLevel){
       startOver();
     }
   }
-  function startOver(){
-    level = -1;
-    gamePattern = [];
-    $("h1").text("Press A Key to Start");
-  }
+  
