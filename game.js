@@ -40,7 +40,6 @@ var gameIndex = 0;
 
 
 function playSound(name){
-  import sound from sounds
   const audio = new Audio('sounds\\'+name+'.mp3');
   animatePress(name);
   audio.play();
